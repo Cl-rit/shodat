@@ -1,6 +1,6 @@
 FROM node:18-alpine
-WORKDIR /Shodat-UI
-ENV PATH="/Shodat-UI/node_modules/.bin:$PATH"
+WORKDIR /shodat-website
+ENV PATH="/shodat-website/node_modules/.bin:$PATH"
 COPY package.json ./
 COPY package-lock.json ./
 RUN npm install --legacy-peer-deps
